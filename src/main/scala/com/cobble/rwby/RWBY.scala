@@ -1,12 +1,14 @@
 package com.cobble.rwby
 
 import com.cobble.rwby.proxy.IProxy
-import com.cobble.rwby.reference.{RWBYBlocks, Constants}
+import com.cobble.rwby.reference.{Constants, RWBYBlocks}
+import com.cobble.rwby.world.RWBYOreGeneration
 import net.minecraft.creativetab.CreativeTabs
 import net.minecraft.init.Blocks
 import net.minecraftforge.fml.common.{Mod, SidedProxy}
 import net.minecraftforge.fml.common.Mod.EventHandler
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPreInitializationEvent}
+import net.minecraftforge.fml.common.registry.GameRegistry
 
 @Mod(modid = "@MODID@", name = "@MODNAME@", version = "@VERSION@", modLanguage = "scala")
 object RWBY {
@@ -28,6 +30,7 @@ object RWBY {
     @EventHandler
     def init(event: FMLInitializationEvent): Unit = {
         proxy.registerRenderers()
+        GameRegistry.registerWorldGenerator(new RWBYOreGeneration, 64)
     }
 
 }
