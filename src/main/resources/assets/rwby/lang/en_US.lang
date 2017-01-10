@@ -1,0 +1,3 @@
+tile.dust_ore.name=Dust Ore
+
+itemGroup.@MODID@=@MODNAME@

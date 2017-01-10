@@ -1,0 +1,8 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": {
+      "model": "rwby:tile.dust_ore"
+    }
+  }
+}
