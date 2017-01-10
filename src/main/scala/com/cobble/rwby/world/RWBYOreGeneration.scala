@@ -24,7 +24,7 @@ class RWBYOreGeneration extends IWorldGenerator {
         val veinSize: Int = minVeinSize + random.nextInt(maxVeinSize - minVeinSize)
         val heightRange: Int = maxY - minY
         val gen: WorldGenMinable = new WorldGenMinable(block.getDefaultState, veinSize, generateIn)
-        (0 to chance).foreach(i => {
+        (0 to chance).foreach(_ => {
             val randX: Int = chunkX * 16 + random.nextInt(16)
             val randY: Int = random.nextInt(heightRange) + minY
             val randZ: Int = chunkZ * 16 +  random.nextInt(16)
