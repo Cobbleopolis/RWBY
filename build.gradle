@@ -29,7 +29,7 @@ repositories {
     }
 }
 
-version = "1.0"
+version = version_major + "." + version_minor + "." + version_patch
 //noinspection GroovyUnusedAssignment
 group= "com.cobble.${modid}" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 //noinspection GroovyUnusedAssignment
@@ -58,6 +58,8 @@ minecraft {
     clientRunArgs += "--username=${username}"
 
     replace '@VERSION@', project.version
+    replace '@MODID@', modid
+    replace '@MODNAME@', modname
 }
 
 //noinspection GroovyAssignabilityCheck
@@ -85,12 +87,12 @@ dependencies {
 
     // Dev APIs
     deobfCompile "mezz.jei:jei_${mc_version}:${jei_version}:api"
-//    deobfCompile "li.cil.oc:OpenComputers:MC${mc_version}-${opencomputers_version}-dev:api"
+    deobfCompile "li.cil.oc:OpenComputers:MC${mc_version}-${opencomputers_version}:api"
 
     // Runtime mods
     runtime "mezz.jei:jei_${mc_version}:${jei_version}"
     runtime "mcp.mobius.waila:Waila:${waila_version}" // Update to use mc_version when waila version updates?
-//    runtime "li.cil.oc:OpenComputers:MC${mc_version}-${opencomputers_version}-dev"
+    runtime "li.cil.oc:OpenComputers:MC${mc_version}-${opencomputers_version}"
 }
 
 //noinspection GroovyAssignabilityCheck
