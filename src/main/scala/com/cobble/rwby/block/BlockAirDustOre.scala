@@ -6,8 +6,8 @@ import net.minecraft.block.material.Material
 import net.minecraft.util.BlockRenderLayer
 import net.minecraftforge.fml.relauncher.{Side, SideOnly}
 
-class BlockDustOre extends RWBYBlock(Material.ROCK) {
-    setUnlocalizedName(UnlocalizedNames.DUST_ORE)
+class BlockAirDustOre extends RWBYBlock(Material.ROCK) {
+    setUnlocalizedName(UnlocalizedNames.AIR_DUST_ORE)
     setSoundType(SoundType.STONE)
 
     @SideOnly(Side.CLIENT)

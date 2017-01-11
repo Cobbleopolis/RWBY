@@ -2,6 +2,6 @@ package com.cobble.rwby.reference
 
 object UnlocalizedNames {
 
-    final val DUST_ORE = "dust_ore"
+    final val AIR_DUST_ORE = "air_dust_ore"
 
 }

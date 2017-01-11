@@ -1,5 +1,5 @@
 {
-  "parent": "rwby:block/tile.dust_ore",
+  "parent": "rwby:block/dust_ore",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

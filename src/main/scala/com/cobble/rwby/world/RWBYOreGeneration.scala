@@ -17,7 +17,7 @@ import net.minecraftforge.fml.common.IWorldGenerator
 class RWBYOreGeneration extends IWorldGenerator {
 
     override def generate(rand: Random, x: Int, z: Int, world: World, iChunkGenerator: IChunkGenerator, iChunkProvider: IChunkProvider): Unit = {
-        generateOre(RWBYBlocks.dustOre, world, rand, x, z, 2, 8, 8, 5, 68)
+        generateOre(RWBYBlocks.airDustOre, world, rand, x, z, 2, 8, 8, 5, 68)
     }
 
     def generateOre(block: Block, world: World, random: Random, chunkX: Int, chunkZ: Int, minVeinSize: Int, maxVeinSize: Int, chance: Int, minY: Int, maxY: Int, generateIn: Predicate[IBlockState] = BlockMatcher.forBlock(Blocks.STONE).asInstanceOf[Predicate[IBlockState]]): Unit = {
