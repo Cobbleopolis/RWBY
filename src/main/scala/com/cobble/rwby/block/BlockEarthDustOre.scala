@@ -11,6 +11,8 @@ class BlockEarthDustOre extends RWBYBlock(Material.ROCK) {
     setUnlocalizedName(UnlocalizedNames.EARTH_DUST_ORE)
     setSoundType(SoundType.STONE)
     setHarvestLevel("pickaxe", HarvestLevels.IRON)
+    setHardness(3.0F)
+    setResistance(5.0F)
 
     @SideOnly(Side.CLIENT)
     override def getBlockLayer = BlockRenderLayer.CUTOUT_MIPPED
