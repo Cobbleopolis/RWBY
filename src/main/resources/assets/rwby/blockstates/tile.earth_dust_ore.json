@@ -1,8 +1,14 @@
 {
   "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "overlay": "rwby:blocks/earth_dust_ore"
+    },
+    "model": "rwby:dust_ore",
+    "transform": "forge:default-block"
+  },
   "variants": {
-    "normal": {
-      "model": "rwby:tile.earth_dust_ore"
-    }
+    "normal": [{}],
+    "inventory": [{}]
   }
 }
