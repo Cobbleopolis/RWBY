@@ -5,6 +5,7 @@ import net.minecraft.block.Block
 import net.minecraft.client.Minecraft
 import net.minecraft.client.renderer.block.model.ModelResourceLocation
 import net.minecraft.item.{Item, ItemBlock}
+import net.minecraftforge.client.model.ModelLoader
 import net.minecraftforge.fml.common.registry.GameRegistry
 
 import scala.collection.mutable.ArrayBuffer
@@ -42,7 +43,7 @@ object RWBYBlocks {
     }
 
     def registerBlockItemRender(block: RWBYBlock, meta: Int = 0): Unit = {
-        Minecraft.getMinecraft.getRenderItem.getItemModelMesher.register(Item.getItemFromBlock(block.asInstanceOf[Block]), meta, new ModelResourceLocation(Constants.RESOURCE_PREFIX + block.getUnlocalizedName, "inventory"))
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), meta, new ModelResourceLocation(block.getRegistryName, "inventory"))
     }
 
 }

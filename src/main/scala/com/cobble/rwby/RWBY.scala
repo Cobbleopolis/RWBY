@@ -1,10 +1,11 @@
 package com.cobble.rwby
 
 import com.cobble.rwby.proxy.IProxy
-import com.cobble.rwby.reference.{Constants, RWBYBlocks}
+import com.cobble.rwby.reference.{Constants, RWBYBlocks, RWBYItems}
 import com.cobble.rwby.world.RWBYOreGeneration
 import net.minecraft.creativetab.CreativeTabs
 import net.minecraft.init.Blocks
+import net.minecraftforge.client.event.ModelRegistryEvent
 import net.minecraftforge.fml.common.{Mod, SidedProxy}
 import net.minecraftforge.fml.common.Mod.EventHandler
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPreInitializationEvent}
@@ -25,11 +26,12 @@ object RWBY {
     def preInit(event: FMLPreInitializationEvent): Unit = {
         println("DIRT BLOCK >> " + Blocks.DIRT.getUnlocalizedName)
         RWBYBlocks.registerBlocks()
+        RWBYItems.registerItems()
+        proxy.registerRenderers()
     }
 
     @EventHandler
     def init(event: FMLInitializationEvent): Unit = {
-        proxy.registerRenderers()
         GameRegistry.registerWorldGenerator(new RWBYOreGeneration, 64)
     }
 

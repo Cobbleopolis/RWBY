@@ -1,6 +1,6 @@
 package com.cobble.rwby.proxy
 
-import com.cobble.rwby.reference.RWBYBlocks
+import com.cobble.rwby.reference.{RWBYBlocks, RWBYItems}
 
 class ClientProxy extends CommonProxy {
 
@@ -14,6 +14,7 @@ class ClientProxy extends CommonProxy {
 
     override def registerRenderers(): Unit = {
         RWBYBlocks.registerItemRenderers()
+        RWBYItems.registerItemRenderers()
     }
 
     override def playSound(soundName: String, xCoord: Float, yCoord: Float, zCoord: Float, volume: Float, pitch: Float): Unit = {}

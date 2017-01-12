@@ -8,7 +8,7 @@ import net.minecraft.util.BlockRenderLayer
 import net.minecraftforge.fml.relauncher.{Side, SideOnly}
 
 class BlockWaterDustOre extends RWBYBlock(Material.ROCK) {
-    setUnlocalizedName(UnlocalizedNames.WATER_DUST_ORE)
+    setUnlocalizedName(UnlocalizedNames.Blocks.WATER_DUST_ORE)
     setSoundType(SoundType.STONE)
     setHarvestLevel("pickaxe", HarvestLevels.IRON)
     setHardness(3.0F)
