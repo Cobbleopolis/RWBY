@@ -1,6 +1,6 @@
 package com.cobble.rwby.reference
 
-import com.cobble.rwby.item.{ItemAirDust, RWBYItem}
+import com.cobble.rwby.item.{ItemAirDust, ItemEarthDust, RWBYItem}
 import net.minecraft.client.Minecraft
 import net.minecraft.client.renderer.block.model.ModelResourceLocation
 import net.minecraft.item.Item
@@ -15,9 +15,12 @@ object RWBYItems {
 
     final val airDust: ItemAirDust = new ItemAirDust
 
+    final val earthDust: ItemEarthDust = new ItemEarthDust
+
     def registerItems(): Unit = {
         println("Begin registering items...")
         registerItem(airDust)
+        registerItem(earthDust)
         println("Finished registering items")
     }
 
@@ -28,6 +31,7 @@ object RWBYItems {
     def registerItemRenderers(): Unit = {
         println("Begin registering item renderers...")
         registerItemRenderer(airDust)
+        registerItemRenderer(earthDust)
         println("Finished registering item renderers")
     }
 
