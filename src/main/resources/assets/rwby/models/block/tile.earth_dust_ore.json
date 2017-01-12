@@ -1,0 +1,6 @@
+{
+  "parent": "rwby:block/dust_ore",
+  "textures": {
+    "overlay": "rwby:blocks/earth_dust_ore"
+  }
+}

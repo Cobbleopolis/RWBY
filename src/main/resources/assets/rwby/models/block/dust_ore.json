@@ -2,8 +2,8 @@
   "parent": "block/cube_all",
   "textures": {
     "all": "blocks/stone",
-    "overlay": "rwby:blocks/dust_ore",
-    "particle": "rwby:blocks/dust_ore"
+    "overlay": "rwby:blocks/air_dust_ore",
+    "particle": "#overlay"
   },
   "elements": [
     {

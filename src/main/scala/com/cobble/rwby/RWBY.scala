@@ -23,7 +23,7 @@ object RWBY {
 
     @EventHandler
     def preInit(event: FMLPreInitializationEvent): Unit = {
-        System.out.println("DIRT BLOCK >> " + Blocks.DIRT.getUnlocalizedName)
+        println("DIRT BLOCK >> " + Blocks.DIRT.getUnlocalizedName)
         RWBYBlocks.registerBlocks()
     }
 
