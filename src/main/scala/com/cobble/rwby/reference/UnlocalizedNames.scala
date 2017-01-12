@@ -16,6 +16,8 @@ object UnlocalizedNames {
         final val AIR_DUST: String = "air_dust"
 
         final val EARTH_DUST: String = "earth_dust"
+
+        final val FIRE_DUST: String = "fire_dust"
     }
 
 }
