@@ -1,0 +1,4 @@
+Air: #FFFFFF
+Earth: #8B4513
+Fire: #D00000
+Water: #0000D0
