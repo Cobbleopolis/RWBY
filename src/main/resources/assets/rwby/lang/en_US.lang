@@ -1,4 +1,5 @@
 tile.air_dust_ore.name=Air Dust Ore
 tile.earth_dust_ore.name=Earth Dust Ore
+tile.fire_dust_ore.name=Fire Dust Ore
 
 itemGroup.rwby=RWBY
