@@ -1,25 +1,33 @@
 package com.cobble.rwby.reference
 
+import com.cobble.rwby.reference.DustTypes.DustType
+
 object UnlocalizedNames {
 
     object Blocks {
-        final val AIR_DUST_ORE: String = "air_dust_ore"
+        val AIR_DUST_ORE: String = Util.getDustOreNameFromDustType(DustTypes.Air)
 
-        final val EARTH_DUST_ORE: String = "earth_dust_ore"
+        val EARTH_DUST_ORE: String = Util.getDustOreNameFromDustType(DustTypes.Earth)
 
-        final val FIRE_DUST_ORE: String = "fire_dust_ore"
+        val FIRE_DUST_ORE: String = Util.getDustOreNameFromDustType(DustTypes.Fire)
 
-        final val WATER_DUST_ORE: String = "water_dust_ore"
+        val WATER_DUST_ORE: String = Util.getDustOreNameFromDustType(DustTypes.Water)
     }
 
     object Items {
-        final val AIR_DUST: String = "air_dust"
+        val AIR_DUST: String = Util.getDustCrystalNameFromDustType(DustTypes.Air)
 
-        final val EARTH_DUST: String = "earth_dust"
+        val EARTH_DUST: String = Util.getDustCrystalNameFromDustType(DustTypes.Earth)
 
-        final val FIRE_DUST: String = "fire_dust"
+        val FIRE_DUST: String = Util.getDustCrystalNameFromDustType(DustTypes.Fire)
 
-        final val WATER_DUST: String = "water_dust"
+        val WATER_DUST: String = Util.getDustCrystalNameFromDustType(DustTypes.Water)
+    }
+
+    object Util {
+        def getDustOreNameFromDustType(dustType: DustType): String = getDustCrystalNameFromDustType(dustType) + "_ore"
+
+        def getDustCrystalNameFromDustType(dustType: DustType): String = dustType + "_dust"
     }
 
 }

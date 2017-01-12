@@ -1,7 +1,7 @@
 package com.cobble.rwby.item
 
-import com.cobble.rwby.reference.UnlocalizedNames
+import com.cobble.rwby.reference.DustTypes
 
-class ItemFireDust extends RWBYItem(UnlocalizedNames.Items.FIRE_DUST) {
+class ItemFireDust extends AbstractItemDust(DustTypes.Fire) {
 
 }
