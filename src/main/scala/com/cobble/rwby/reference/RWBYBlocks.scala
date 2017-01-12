@@ -14,10 +14,10 @@ object RWBYBlocks {
 
     val blockArray: ArrayBuffer[RWBYBlock] = ArrayBuffer[RWBYBlock]()
 
-    val airDustOre: BlockAirDustOre = new BlockAirDustOre
-    val earthDustOre: BlockEarthDustOre = new BlockEarthDustOre
-    val fireDustOre: BlockFireDustOre = new BlockFireDustOre
-    val waterDustOre: BlockWaterDustOre = new BlockWaterDustOre
+    val airDustOre: BlockDustOre = new BlockDustOre(DustTypes.Air)
+    val earthDustOre: BlockDustOre = new BlockDustOre(DustTypes.Earth)
+    val fireDustOre: BlockDustOre = new BlockDustOre(DustTypes.Fire)
+    val waterDustOre: BlockDustOre = new BlockDustOre(DustTypes.Water)
 
     def registerBlocks(): Unit = {
         println("Begin registering blocks...")

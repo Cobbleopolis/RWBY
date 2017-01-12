@@ -12,7 +12,7 @@ import net.minecraft.item.Item
 import net.minecraft.util.BlockRenderLayer
 import net.minecraftforge.fml.relauncher.{Side, SideOnly}
 
-abstract class AbstractBlockDustOre(dustType: DustType) extends RWBYBlock(Material.ROCK) {
+class BlockDustOre(dustType: DustType) extends RWBYBlock(Material.ROCK) {
     setUnlocalizedName(UnlocalizedNames.Util.getDustOreNameFromDustType(dustType))
     setSoundType(SoundType.STONE)
     setHarvestLevel("pickaxe", HarvestLevels.IRON)

@@ -12,13 +12,10 @@ object RWBYItems {
 
     val itemArray: ArrayBuffer[RWBYItem] = ArrayBuffer[RWBYItem]()
 
-    final val airDust: ItemAirDust = new ItemAirDust
-
-    final val earthDust: ItemEarthDust = new ItemEarthDust
-
-    final val fireDust: ItemFireDust = new ItemFireDust
-
-    final val waterDust: ItemWaterDust = new ItemWaterDust
+    val airDust: ItemDust = new ItemDust(DustTypes.Air)
+    val earthDust: ItemDust = new ItemDust(DustTypes.Earth)
+    val fireDust: ItemDust = new ItemDust(DustTypes.Fire)
+    val waterDust: ItemDust = new ItemDust(DustTypes.Water)
 
     def registerItems(): Unit = {
         println("Begin registering items...")
