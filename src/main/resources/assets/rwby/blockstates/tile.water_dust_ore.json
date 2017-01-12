@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "overlay": "rwby:blocks/water_dust_ore"
+    },
+    "model": "rwby:dust_ore",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}
