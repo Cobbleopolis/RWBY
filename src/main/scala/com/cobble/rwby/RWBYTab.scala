@@ -8,6 +8,6 @@ import net.minecraftforge.fml.relauncher.{Side, SideOnly}
 class RWBYTab extends CreativeTabs(Constants.MOD_ID) {
 
     @SideOnly(Side.CLIENT)
-    override def getTabIconItem: Item = Item.getItemFromBlock(RWBYBlocks.airDustOre)
+    override def getTabIconItem: ItemStack = new ItemStack(Item.getItemFromBlock(RWBYBlocks.airDustOre))
 
 }
