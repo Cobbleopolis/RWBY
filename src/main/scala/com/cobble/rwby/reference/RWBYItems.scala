@@ -17,12 +17,21 @@ object RWBYItems {
     val fireDust: ItemDust = new ItemDust(DustTypes.Fire)
     val waterDust: ItemDust = new ItemDust(DustTypes.Water)
 
+    val airPowderedDust: ItemPowderedDust = new ItemPowderedDust(DustTypes.Air)
+    val earthPowderedDust: ItemPowderedDust = new ItemPowderedDust(DustTypes.Earth)
+    val firePowderedDust: ItemPowderedDust = new ItemPowderedDust(DustTypes.Fire)
+    val waterPowderedDust: ItemPowderedDust = new ItemPowderedDust(DustTypes.Water)
+
     def registerItems(): Unit = {
         println("Begin registering items...")
         registerItem(airDust)
         registerItem(earthDust)
         registerItem(fireDust)
         registerItem(waterDust)
+        registerItem(airPowderedDust)
+        registerItem(earthPowderedDust)
+        registerItem(firePowderedDust)
+        registerItem(waterPowderedDust)
         println("Finished registering items")
     }
 
@@ -36,6 +45,10 @@ object RWBYItems {
         registerItemRenderer(earthDust)
         registerItemRenderer(fireDust)
         registerItemRenderer(waterDust)
+        registerItemRenderer(airPowderedDust)
+        registerItemRenderer(earthPowderedDust)
+        registerItemRenderer(firePowderedDust)
+        registerItemRenderer(waterPowderedDust)
         println("Finished registering item renderers")
     }
 

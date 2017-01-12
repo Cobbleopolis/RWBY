@@ -8,4 +8,9 @@ item.earth_dust.name=Earth Dust
 item.fire_dust.name=Fire Dust
 item.water_dust.name=Fire Dust
 
+item.air_powdered_dust.name=Powdered Air Dust
+item.earth_powdered_dust.name=Powdered Earth Dust
+item.fire_powdered_dust.name=Powdered Fire Dust
+item.water_powdered_dust.name=Powdered Fire Dust
+
 itemGroup.rwby=RWBY
